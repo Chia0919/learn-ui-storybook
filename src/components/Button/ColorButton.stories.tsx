@@ -8,7 +8,11 @@ storiesOf("ColorButton", module)
   .addDecorator(withKnobs)
   .add("red", () => (
     <ColorButton
-      color={select("color", { Red: "red", Dark: "darkred" }, "red")}
+      color={select(
+        "color",
+        { Red: "red", Dark: "darkred", Blue: "blue" },
+        "red"
+      )}
       onClick={action("clicked")}
     />
   ))
